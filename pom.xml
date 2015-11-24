@@ -120,7 +120,6 @@
 		<scoverage.maven.plugin.failOnMinimumCoverage>false</scoverage.maven.plugin.failOnMinimumCoverage>
 		<scalatest.maven.plugin.version>1.0</scalatest.maven.plugin.version>
 		<scala.minor.version>2.11</scala.minor.version>
-		<scala.release>7</scala.release>
 		<logstash.logback.encoder.version>4.3</logstash.logback.encoder.version>
 
 		<scalamock.version>3.2.1</scalamock.version>
@@ -160,7 +159,6 @@
 		<scala.stack.max.mb>2048</scala.stack.max.mb>
 		<scalastyle.maven.plugin.version>0.1.0</scalastyle.maven.plugin.version>
 
-		<akka.version>2.4.0</akka.version>
 		<akka.http.version>1.0</akka.http.version>
 		<akka.stream.version>1.0</akka.stream.version>
 		<akka.inmemory.persistence.version>0.2.1</akka.inmemory.persistence.version>
@@ -172,13 +170,15 @@
 		<site.target.url>github:http://uzh.github.io/${project.artifactId}/${site.path}</site.target.url>
 		<trajano.wagon.version>2.0.5-SNAPSHOT</trajano.wagon.version>
 		
+		<scala.release>7</scala.release>
+		<akka.version>2.4.0</akka.version>
 		<akka.kryo.version>0.3.3</akka.kryo.version>
 		<d3js.version>3.5.6</d3js.version>
 		<introjs.version>1.0.0</introjs.version>
 		<jquery.version>2.1.4</jquery.version>
 		<reconnecting-websocket.version>1.0.0</reconnecting-websocket.version>
 		<scalatest.version>2.2.5</scalatest.version>
-		<scalacheck.version>1.12.4</scalacheck.version>
+		<scalacheck.version>1.12.5</scalacheck.version>
 		<easymock.version>3.3.1</easymock.version>
 
 	</properties>
@@ -237,11 +237,6 @@
 				<groupId>org.joda</groupId>
 				<artifactId>joda-convert</artifactId>
 				<version>${joda.convert.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.fge</groupId>
-				<artifactId>json-schema-validator</artifactId>
-				<version>${fge.json.schema.validator}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.maven.wagon</groupId>
@@ -545,11 +540,6 @@
 				<scope>test</scope>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-ssh</artifactId>
-				<version>${wagon.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.openrdf.sesame</groupId>
 				<artifactId>sesame-runtime</artifactId>
 				<version>${sesame.version}</version>
@@ -635,11 +625,6 @@
 							<exclude>src/main/avro/**</exclude>
 						</excludes>
 					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.jacoco</groupId>
-					<artifactId>jacoco-maven-plugin</artifactId>
-					<version>${jacoco.maven.plugin.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
@@ -840,6 +825,7 @@
 				<plugin>
 					<groupId>org.jacoco</groupId>
 					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>${jacoco.maven.plugin.version}</version>
 					<executions>
 						<execution>
 							<goals>
