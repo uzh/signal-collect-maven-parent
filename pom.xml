@@ -39,8 +39,8 @@
 		<url>${ghe.url.base}/${project.artifactId}/issues</url>
 		<system>GitHub</system>
 	</issueManagement>
-	<name>Signal-Collect Parent POM</name>
-	<description>Parent POM for Signal-Collect projects</description>
+	<name>Signal/Collect Parent POM</name>
+	<description>Parent POM for Signal/Collect projects</description>
 	<properties>
 		<GITHUB.BRANCH>master</GITHUB.BRANCH>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
