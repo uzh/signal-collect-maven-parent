@@ -171,8 +171,8 @@
 		<trajano.wagon.version>2.0.5-SNAPSHOT</trajano.wagon.version>
 		
 		<scala.release>7</scala.release>
-		<akka.version>2.4.0</akka.version>
-		<akka.kryo.version>0.3.3</akka.kryo.version>
+		<akka.version>2.4.1</akka.version>
+		<akka.kryo.version>0.4.0</akka.kryo.version>
 		<d3js.version>3.5.6</d3js.version>
 		<introjs.version>1.0.0</introjs.version>
 		<jquery.version>2.1.4</jquery.version>
