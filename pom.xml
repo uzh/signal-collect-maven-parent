@@ -122,37 +122,6 @@
 		<scala.minor.version>2.11</scala.minor.version>
 		<logstash.logback.encoder.version>4.3</logstash.logback.encoder.version>
 
-		<scalamock.version>3.2.1</scalamock.version>
-		<lambdaworks.jacks.version>2.3.3</lambdaworks.jacks.version>
-		<json4s.version>3.2.11</json4s.version>
-		<json4s.native.version>3.2.11</json4s.native.version>
-		<io.argonaut.version>6.1-M4</io.argonaut.version>
-		<kryo.serialization.version>0.3.3</kryo.serialization.version>
-		<scalaj.http.version>1.1.4</scalaj.http.version>
-		<aspectj.version>1.8.4</aspectj.version>
-		<apache.shiro.version>1.2.3</apache.shiro.version>
-		<scalarx.version>0.2.6</scalarx.version>
-		<ficus.version>1.1.2</ficus.version>
-		<jsoup.version>1.8.1</jsoup.version>
-		<java.websocket.version>1.3.0</java.websocket.version>
-		<dispatch.core.version>0.11.2</dispatch.core.version>
-		<nscala.time.version>1.6.0</nscala.time.version>
-		<apache.jena.version>2.13.0</apache.jena.version>
-		<parboiled.scala.version>1.1.6</parboiled.scala.version>
-		<play2.version>2.4.0-M1</play2.version>
-		<slf4j.version>1.7.9</slf4j.version>
-		<log4j.version>1.2.17</log4j.version>
-		<commons.io.version>2.0.1</commons.io.version>
-		<commons.pool.version>1.5.4</commons.pool.version>
-		<apache.httpclient.version>4.4</apache.httpclient.version>
-		<jackson.version>2.5.1</jackson.version>
-		<sesame.version>2.8.3</sesame.version>
-		<scalaz.version>7.1.0</scalaz.version>
-		<cucumber.scala.version>1.2.2</cucumber.scala.version>
-		<cucumber.jvm.deps.version>1.0.3</cucumber.jvm.deps.version>
-		<tototoshi.scala.csv.version>1.1.2</tototoshi.scala.csv.version>
-
-
 		<scala.version>${scala.minor.version}.${scala.release}</scala.version>
 		<scala.xml.version>${scala.minor.version}.0-M4</scala.xml.version>
 		<scala.stack.start.mb>256</scala.stack.start.mb>
@@ -171,16 +140,11 @@
 		<trajano.wagon.version>2.0.5-SNAPSHOT</trajano.wagon.version>
 		
 		<scala.release>7</scala.release>
-		<akka.version>2.4.1</akka.version>
-		<akka.kryo.version>0.4.0</akka.kryo.version>
-		<d3js.version>3.5.6</d3js.version>
-		<introjs.version>1.0.0</introjs.version>
-		<jquery.version>2.1.4</jquery.version>
-		<reconnecting-websocket.version>1.0.0</reconnecting-websocket.version>
-		<scalatest.version>2.2.5</scalatest.version>
+		<scalatest.version>2.2.6</scalatest.version>
 		<scalacheck.version>1.12.5</scalacheck.version>
-		<easymock.version>3.3.1</easymock.version>
-
+		<easymock.version>3.4</easymock.version>
+		<scalamock.version>3.2.2</scalamock.version>
+		<ficus.version>1.1.2</ficus.version>
 	</properties>
 
 	<!-- URL for site gen -->
@@ -262,7 +226,7 @@
 			<dependency>
 				<groupId>com.github.romix.akka</groupId>
 				<artifactId>akka-kryo-serialization_${scala.minor.version}</artifactId>
-				<version>${kryo.serialization.version}</version>
+				<version>${akka.kryo.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.scala-lang</groupId>
